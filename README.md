@@ -193,7 +193,7 @@ It does **not** explicitly model:
 
 ## Known Limitations
 
-- **Northern Siberia coverage:** The Arctic coastal strip above ~72–75°N appears uncoloured in Russia maps. This reflects the GCM land-sea mask at 1–2° resolution and the CRU-TS observational coverage — both treat these highly irregular coastal cells as ocean. This is scientifically correct, not a code artefact.
+- **Northern Siberia coverage:** The Arctic coastal strip above ~72–75°N appears uncoloured in Russia maps. This reflects the GCM land-sea mask at 1–2° resolution and the CRU-TS observational coverage because both treat these highly irregular coastal cells as ocean. This is scientifically correct, not a code artefact.
 - **Seasonal analysis:** The BC notebooks export annual PRCPTOT only. `Final_Analysis.ipynb` will use an annual proxy for seasonal panels unless you add a monthly NetCDF export step to the BC notebooks.
 - **Kaliningrad:** The Russian exclave is within the display extent but may render as a small uncoloured dot depending on GCM land coverage at that grid resolution.
 
