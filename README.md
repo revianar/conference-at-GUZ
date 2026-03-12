@@ -1,4 +1,4 @@
-# Climate-Driven Changes in Annual Precipitation and Water Stress Under RCP4.5
+# Climate-Driven Changes in Annual Precipitation and Water Stress Under RCP 4.5
 
 ## Overview
 
