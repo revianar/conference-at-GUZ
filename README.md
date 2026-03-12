@@ -31,7 +31,7 @@ All files use the variable `pr` (kg m⁻² s⁻¹), converted to mm/day by multi
 pip install xarray numpy pandas matplotlib cartopy scipy dask distributed netCDF4
 conda install -c conda-forge cartopy ← # Cartopy may require system-level dependencies
 ```
-2. Edit `[PROJECT_DIR]` in every notebook to your desired project locations
+2. Edit `[PROJECT_DIR]` in every notebook to your desired project location
 3. Run `multi-model_ensemble.ipynb`
 4. Run `bias_correction_Indonesia.ipynb`
 5. Run `bias_correction_Russia.ipynb`
