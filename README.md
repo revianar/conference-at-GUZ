@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the full analysis workflow for assessing projected changes in annual precipitation and water stress under the RCP4.5 scenario for Indonesia and Russia using bias-corrected multi-model CMIP5 precipitation simulations.
+This repository contains the full analysis workflow for assessing projected changes in annual precipitation and water stress under the RCP 4.5 scenario for Indonesia and Russia using bias-corrected multi-model CMIP5 precipitation simulations.
 
 The study was done as a part of the presentation at the International Scientific and Practical Conference "Earth Sciences - at the Service of Agro-Industrial Complex", the State University of Land Use Planning, Russia. It focuses on long-term hydroclimatic changes and their implications for freshwater quality through the **PRCPTOT climate index** and precipitation-derived water stress indicators. 
 
