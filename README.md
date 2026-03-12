@@ -1,15 +1,15 @@
-# Climate-Driven Changes in Annual Precipitation and Water Stress Under RCP4.5
+# Climate-Driven Changes in Annual Precipitation and Water Stress Under RCP 4.5
 
 ## Overview
 
-This repository contains the full analysis pipeline for assessing projected changes in annual precipitation and water stress under the RCP4.5 scenario for Indonesia and Russia using bias-corrected multi-model CMIP5 precipitation simulations.
+This repository contains the full analysis workflow for assessing projected changes in annual precipitation and water stress under the RCP4.5 scenario for Indonesia and Russia using bias-corrected multi-model CMIP5 precipitation simulations.
 
 The study was done as a part of the presentation at the International Scientific and Practical Conference "Earth Sciences - at the Service of Agro-Industrial Complex", the State University of Land Use Planning, Russia. It focuses on long-term hydroclimatic changes and their implications for freshwater availability through the **PRCPTOT climate index** and precipitation-derived water stress indicators. 
 
 | | Indonesia | Russia |
 |---|---|---|
 | **Observed reference** | CHIRPS v2.0 (monthly) | CRU-TS v4.08 (monthly) |
-| **BC baseline period** | 1981–2005 | 1976–2005 |
+| **Bias correction (BC) baseline period** | 1981–2005 | 1976–2005 |
 | **Future period** | 2041–2070 | 2041–2070 |
 | **Scenario** | RCP 4.5 | RCP 4.5 |
 | **GCM resolution** | ~1–2° | ~1–2° |
@@ -35,7 +35,7 @@ conda install -c conda-forge cartopy ← # Cartopy may require system-level depe
 3. Run `multi-model_ensemble.ipynb`
 4. Run `bias_correction_Indonesia.ipynb`
 5. Run `bias_correction_Russia.ipynb`
-6. Run`Final_Analysis.ipynb`
+6. Run `Final_Analysis.ipynb`
 
 ---
 
@@ -104,7 +104,7 @@ where:
 3. Visualisation helpers (`_smooth_and_pad`, `plot_div`, `plot_seq`, `plot_stress`)
 4. EQM function
 5. Load CHIRPS v2.0 observations
-6. Bias correction (BC) pipeline (all 3 GCMs)
+6. BC pipeline (all 3 GCMs)
 7. Save per-model NetCDFs
 8. Ensemble statistics & CWSI
 9. Save ensemble NetCDFs
@@ -193,8 +193,8 @@ It does **not** explicitly model:
 
 ## Known Limitations
 
-- **Northern Siberia coverage:** The Arctic coastal strip above ~72–75°N appears uncoloured in Russia maps. This reflects the GCM land-sea mask at 1–2° resolution and the CRU-TS observational coverage — both treat these highly irregular coastal cells as ocean. This is scientifically correct, not a code artefact.
-- **Seasonal analysis:** The BC notebooks export annual PRCPTOT only. `Final_Analysis.ipynb` will use an annual proxy for seasonal panels unless you add a monthly NetCDF export step to the BC notebooks.
+- **Northern Siberia coverage:** The Arctic coastal strip above ~72–75°N appears uncoloured in Russia maps. This reflects the GCM land-sea mask at 1–2° resolution and the CRU-TS observational coverage because both treat these highly irregular coastal cells as ocean.
+- **Seasonal analysis:** The BC notebooks export annual PRCPTOT only. `Final_Analysis.ipynb` will use an annual proxy for seasonal panels unless there are additions such as a monthly NetCDF export step to the BC notebooks.
 - **Kaliningrad:** The Russian exclave is within the display extent but may render as a small uncoloured dot depending on GCM land coverage at that grid resolution.
 
 ---
