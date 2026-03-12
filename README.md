@@ -9,7 +9,7 @@ The study was done as a part of the presentation at the International Scientific
 | | Indonesia | Russia |
 |---|---|---|
 | **Observed reference** | CHIRPS v2.0 (monthly) | CRU-TS v4.08 (monthly) |
-| **BC baseline period** | 1981–2005 | 1976–2005 |
+| **Bias correction (BC) baseline period** | 1981–2005 | 1976–2005 |
 | **Future period** | 2041–2070 | 2041–2070 |
 | **Scenario** | RCP 4.5 | RCP 4.5 |
 | **GCM resolution** | ~1–2° | ~1–2° |
@@ -104,7 +104,7 @@ where:
 3. Visualisation helpers (`_smooth_and_pad`, `plot_div`, `plot_seq`, `plot_stress`)
 4. EQM function
 5. Load CHIRPS v2.0 observations
-6. Bias correction (BC) pipeline (all 3 GCMs)
+6. BC pipeline (all 3 GCMs)
 7. Save per-model NetCDFs
 8. Ensemble statistics & CWSI
 9. Save ensemble NetCDFs
