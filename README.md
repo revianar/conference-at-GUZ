@@ -42,9 +42,9 @@ conda install -c conda-forge cartopy ← # Cartopy may require system-level depe
 ## Methodology
 
 ### 1. Data Preprocessing
-- Daily `pr` aggregated to **monthly totals** (mm/month) via `resample(time='MS').sum()`
+- Daily `pr` aggregated to monthly totals (mm/month) via `resample(time='MS').sum()`
 - GCM data clipped to regional bounds with a 2° padding beyond the display extent to ensure full coastal coverage after interpolation
-- Observations regridded **down** to the coarse GCM grid (bilinear) because the EQM must operate at the GCM's native spatial scale
+- Observations regridded down to the coarse GCM grid (bilinear) because the EQM must operate at the GCM's native spatial scale
 
 ### 2. Empirical Quantile Mapping (EQM)
 - **99 quantiles** computed separately for each calendar month (Jan↔Jan, …, Dec↔Dec) to preserve the seasonal cycle
@@ -203,9 +203,9 @@ It does **not** explicitly model:
 
 - **CHIRPS:** Funk et al. (2015). *The climate hazards infrared precipitation with stations — a new environmental record for monitoring extremes.* Scientific Data, 2, 150066. https://doi.org/10.1038/sdata.2015.66
 - **CRU-TS:** Harris et al. (2020). *Version 4 of the CRU TS monthly high-resolution gridded multivariate climate dataset.* Scientific Data, 7, 109. https://doi.org/10.1038/s41597-020-0453-3
-- **HadGEM2-AO:** The HadGEM2 Development Team (2011). *MOHC HadGEM2-AO model output.* CMIP5. https://doi.org/10.1594/WDCC/CMIP5.MOHCHAhi
-- **MPI-ESM-MR:** Giorgetta et al. (2013). *MPI-M MPI-ESM-MR model output.* CMIP5. https://doi.org/10.1594/WDCC/CMIP5.MPIMMEhi
-- **IPSL-CM5A-LR:** Dufresne et al. (2013). *IPSL IPSL-CM5A-LR model output.* CMIP5. https://doi.org/10.1594/WDCC/CMIP5.IPILILhi
+- **HadGEM2-AO:** The HadGEM2 Development Team (2011). *The HadGEM2 family of Met Office Unified Model climate configurations.* Geoscientific Model Development. https://doi.org/10.5194/gmd-4-723-2011
+- **MPI-ESM-MR:** Giorgetta et al. (2013). *Climate and carbon cycle changes from 1850 to 2100 in MPI-ESM simulations for the Coupled Model Intercomparison Project phase 5* World Data Center for Climate (WDCC) at DKRZ. https://doi.org/10.1002/jame.20038
+- **IPSL-CM5A-LR:** Dufresne et al. (2013). *Climate change projections using the IPSL-CM5 Earth System Model: from CMIP3 to CMIP5* Climate Dynamics. https://doi.org/10.1007/s00382-012-1636-1
 
 ## Author Note
 
